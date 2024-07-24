@@ -438,12 +438,12 @@
 }
 
 /* Style the images inside the grid */
-.gallerycolumn galleryimg {
+.gallerycolumn img {
   opacity: 0.8;
   cursor: pointer;
 }
 
-.gallerycolumn galleryimg:hover {
+.gallerycolumn img:hover {
   opacity: 1;
 }
 
