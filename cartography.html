@@ -81,40 +81,43 @@
     </div>
     <!-- Header End -->
 
+
+	
+
 	<div style="text-align:center">
 	  <h2>Cartography Gallery</h2>
 	  <p>- Click to expand -</p>
 	</div>
 	
 	<!-- The four columns -->
-	<div class="row">
-	  <div class="column">
+	<div class="ggrow">
+	  <div class="gcolumn">
 	    <img src="img/project-1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
 	  </div>
-	  <div class="column">
-	    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+	  <div class="gcolumn">
+	    <img src="img/project-2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
 	  </div>
-	  <div class="column">
-	    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+	  <div class="gcolumn">
+	    <img src="img/project-3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
 	  </div>
-	  <div class="column">
-	    <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+	  <div class="gcolumn">
+	    <img src="img/project-4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
 	  </div>
 	</div>
 	
-	<div class="container">
+	<div class="gcontainer">
 	  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-	  <img id="expandedImg" style="width:100%">
-	  <div id="imgtext"></div>
+	  <img id="gexpandedImg" style="width:100%">
+	  <div id="gimgtext"></div>
 	</div>
 
 	<script>
 	function myFunction(imgs) {
-	  var expandImg = document.getElementById("expandedImg");
-	  var imgText = document.getElementById("imgtext");
-	  expandImg.src = imgs.src;
-	  imgText.innerHTML = imgs.alt;
-	  expandImg.parentElement.style.display = "block";
+	  var gexpandImg = document.getElementById("gexpandedImg");
+	  var gimgText = document.getElementById("gimgtext");
+	  gexpandImg.src = imgs.src;
+	  gimgText.innerHTML = imgs.alt;
+	  gexpandImg.parentElement.style.display = "block";
 	}
 	</script>
 	
@@ -136,15 +139,15 @@
 	  </div>
 	</div>
 	
-	<!-- The expanding image container -->
+	<!-- The expanding image container --
 	<div class="gallerycontainer">
-	  <!-- Close the image -->
+	  <!-- Close the image --
 	  <span onclick="this.parentElement.style.display='none'" class="galleryclosebtn">&times;</span>
 	
-	  <!-- Expanded image -->
+	  <!-- Expanded image --
 	  <img id="expandedImg" style="width:100%">
 	
-	  <!-- Image text -->
+	  <!-- Image text --
 	  <div id="galleryimgtext"></div>
 	</div>
         <!--div class="container">
