@@ -457,7 +457,7 @@ gbody {
 }
 
 /* Clear floats after the columns */
-.grow:after {
+.ggrow:after {
   content: "";
   display: table;
   clear: both;
