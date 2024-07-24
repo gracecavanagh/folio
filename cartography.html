@@ -31,6 +31,21 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <style>
+	* {
+	  box-sizing: border-box;
+	}
+	
+	.row {
+	  display: flex;
+	}
+	
+	/* Create three equal columns that sits next to each other */
+	.column {
+	  flex: 33.33%;
+	  padding: 5px;
+	}
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -83,12 +98,20 @@
 
 
 
-<div class="scroll-container">
-  <img src="img/project-1.jpg" alt="Cinque Terre">
-  <img src="img/project-1.jpg" alt="Forest">
-  <img src="img/project-1.jpg" alt="Northern Lights">
-  <img src="img/project-1.jpg" alt="Mountains">
-</div>
+	<h2>Images Side by Side</h2>
+	<p>How to create side-by-side images with CSS Flexbox:</p>
+	
+	<div class="row">
+	  <div class="column">
+	    <img src="img_snow.jpg" alt="Snow" style="width:100%">
+	  </div>
+	  <div class="column">
+	    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+	  </div>
+	  <div class="column">
+	    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+	  </div>
+	</div>
 	
 
 
