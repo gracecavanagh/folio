@@ -434,43 +434,43 @@
   box-sizing: border-box;
 }
 
-body {
+gbody {
   margin: 0;
   font-family: Arial;
 }
 
 /* The grid: Four equal columns that floats next to each other */
-.column {
+.gcolumn {
   float: left;
   width: 25%;
   padding: 10px;
 }
 
 /* Style the images inside the grid */
-.column img {
+.gcolumn img {
   opacity: 0.8; 
   cursor: pointer; 
 }
 
-.column img:hover {
+.gcolumn img:hover {
   opacity: 1;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.grow:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* The expanding image container */
-.container {
+.gcontainer {
   position: relative;
   display: none;
 }
 
 /* Expanding image text */
-#imgtext {
+#gimgtext {
   position: absolute;
   bottom: 15px;
   left: 15px;
