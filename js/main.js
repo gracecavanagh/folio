@@ -123,16 +123,3 @@
 
     
 })(jQuery);
-
-function myFunction(imgs) {
-  // Get the expanded image
-  var gexpandImg = document.getElementById("gexpandedImg");
-  // Get the image text
-  var gimgText = document.getElementById("gimgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  gexpandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  gimgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  gexpandImg.parentElement.style.display = "block";
-}
