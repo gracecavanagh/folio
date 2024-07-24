@@ -430,7 +430,7 @@
 }
 
 /**** Gallery ****/
-.scroll-container {
+.scroll-container div{
   background-color: #333;
   overflow: auto;
   white-space: nowrap;
